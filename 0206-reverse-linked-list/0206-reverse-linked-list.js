@@ -20,4 +20,11 @@ var reverseList = function(head) {
         curr = next_p
     }
     return prev_p
+
+    /*New Aproach*/
+    // if (head === null || head.next === null) return head;
+    // let newHead = reverseList(head.next);
+    // head.next.next = head;
+    // head.next = null;
+    // return newHead;
 };
